@@ -44,7 +44,6 @@ public class TaskService {
         taskRepository.deleteById(id);
     }
     public List<Task> searchTasks(String title, String description, TaskStatus status, LocalDateTime dueDate) {
-        // Add any service-level logic if needed, like logging or transforming inputs
         return taskRepository.searchTasks(
                 title != null ? title : null,
                 description != null ? description : null,
