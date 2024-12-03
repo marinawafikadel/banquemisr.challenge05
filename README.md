@@ -15,7 +15,7 @@ CREATE TABLE users (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(255) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
-    role ENUM('ADMIN', 'USER', 'MANAGER') NOT NULL, -- Adjust role values based on your `Role` enum
+    role ENUM('ROLE_ADMIN', 'ROLE_USER') NOT NULL,
     email VARCHAR(255)
 );
 CREATE TABLE history (
